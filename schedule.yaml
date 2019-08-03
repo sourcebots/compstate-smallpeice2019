@@ -1,0 +1,67 @@
+match_slot_lengths:
+  pre: 90
+  match: 150
+  post: 60
+  total: 300
+#
+# Various staging related times, in seconds before the actual match start
+staging:
+  # The earliest teams can present themselves for a match
+  opens: 300
+  # The time by which teams _must_ be in staging
+  closes: 120
+  # How long staging is open for; equal to `opens - closes`
+  duration: 180
+  # How long before the start of the match to signal to shepherds they
+  # should start looking for teams
+  signal_shepherds:
+    # TODO: configure these times to allow for different distances from the arena?
+    Shepherd Level 2 Bar: 180
+    Shepherd Level 3: 180
+  # How long before the start of the match to signal to teams they should
+  # go to staging
+  signal_teams: 180
+#
+timezone: Europe/London
+#
+delays: []
+#
+match_periods:
+  league:
+  - start_time: 2019-08-16 10:00:00+01:00
+    end_time: 2019-08-16 16:10:00+01:00
+    description: League
+
+  knockout:
+  - start_time: 2019-08-16 16:30:00+01:00
+    end_time: 2019-08-16 16:55:00+01:00
+    description: Knockouts
+#
+# Five minutes after the final, allows for rotating and possible delays
+# (this value ignores all delays)
+tiebreaker: 2019-08-16 17:05:00+01:00
+#
+league:
+  extra_spacing: null
+#
+knockout:
+  static: true
+#
+static_knockout:
+  teams_per_arena: 4
+  matches:
+    0:
+      0:
+        arena: main
+        start_time: 2019-08-16 16:30:00 +1
+        teams: [S2, S5, S3, S8]
+      1:
+        arena: main
+        start_time: 2019-08-16 16:40:00 +1
+        teams: [S1, S6, S4, S7]
+    1:
+      0:
+        arena: main
+        start_time: 2019-08-16 16:50:00 +1
+        #         S2,    S3,    S1,    S4
+        teams: ['000', '001', '010', '011']

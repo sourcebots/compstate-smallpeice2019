@@ -1,0 +1,34 @@
+match_number: 0
+arena_id: A
+arena_zones:
+  0:
+    tokens_platform: 0
+    tokens_ground: 0
+  1:
+    tokens_platform: 0
+    tokens_ground: 0
+  2:
+    tokens_platform: 0
+    tokens_ground: 0
+  3:
+    tokens_platform: 0
+    tokens_ground: 0
+  other:
+    tokens_ground: 16
+teams:
+  TLA1:
+    zone: 0
+    disqualified: false
+    present: true
+  TLA2:
+    zone: 1
+    disqualified: false
+    present: true
+  TLA3:
+    zone: 2
+    disqualified: false
+    present: true
+  TLA4:
+    zone: 3
+    disqualified: false
+    present: true

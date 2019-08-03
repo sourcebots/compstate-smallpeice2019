@@ -1,0 +1,23 @@
+teams:
+  - name: level-2-bar
+    display_name: Level 2 Bar
+    teams:
+      - T01
+      - T02
+      - T03
+      - T04
+      - T05
+  - name: level-3
+    display_name: Level 3
+    teams:
+      - T06
+      - T07
+      - T08
+      - T09
+      - T10
+      - T11
+      - T12
+      - T13
+      - T14
+      - T15
+      - T16
