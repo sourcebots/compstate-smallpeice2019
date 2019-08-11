@@ -20,15 +20,19 @@ teams:
     zone: 0
     disqualified: false
     present: true
+    held_tokens: 0
   TLA2:
     zone: 1
     disqualified: false
     present: true
+    held_tokens: 0
   TLA3:
     zone: 2
     disqualified: false
     present: true
+    held_tokens: 0
   TLA4:
     zone: 3
     disqualified: false
     present: true
+    held_tokens: 0
