@@ -10,12 +10,6 @@ sys.path.insert(0, ROOT)
 
 from score import Scorer, InvalidScoresheetException
 
-TEAMS_DATA =  {
-    'ABC': {'zone': 0},  # green
-    'DEF': {'zone': 1},  # orange
-    'GHI': {'zone': 2},  # purple
-}
-
 
 class ScorerTests(unittest.TestCase):
     longMessage = True
