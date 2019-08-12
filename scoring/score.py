@@ -21,13 +21,22 @@ class Scorer(object):
         self._arena_data = arena_data
 
     def validate(self, extra):
-        num_tokens = sum(itertools.chain(
+        token_counts = tuple(itertools.chain(
             [x.get('tokens_held', 0) for x in self._teams_data.values()],
             [extra.get('tokens_ground', 0)],
             [x.get('tokens_ground', 0) for x in self._arena_data.values()],
             [x.get('tokens_platform', 0) for x in self._arena_data.values()],
         ))
 
+        negative_counts = [x for x in token_counts if x < 0]
+        if negative_counts:
+            raise InvalidScoresheetException(
+                "Negative token counts are not valid (got {})".format(
+                    " and ".join(str(x) for x in negative_counts),
+                ),
+            )
+
+        num_tokens = sum(token_counts)
         if num_tokens != NUM_TOKENS:
             raise InvalidScoresheetException(
                 "Wrong number of tokens: {} ≠ {}".format(num_tokens, NUM_TOKENS),
