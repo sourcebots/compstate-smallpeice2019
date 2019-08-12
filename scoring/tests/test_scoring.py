@@ -37,7 +37,7 @@ class ScorerTests(unittest.TestCase):
         }
         self.extra_data = {'tokens_ground': 16}
 
-    # Too many tokens
+    # Wrong number of tokens
 
     def test_too_many_tokens_held(self):
         # There are a total of 16 tokens
@@ -83,6 +83,14 @@ class ScorerTests(unittest.TestCase):
         self.teams_data['ABC']['tokens_held'] = 9
         self.arena_data[0]['tokens_ground'] = 9
         self.arena_data[1]['tokens_platform'] = 9
+
+        scorer = self.construct_scorer()
+
+        with self.assertRaises(InvalidScoresheetException):
+            scorer.validate({'tokens_ground': 2})
+
+    def test_too_few_tokens(self):
+        # There are a total of 16 tokens
 
         scorer = self.construct_scorer()
 

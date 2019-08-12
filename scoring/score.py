@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import itertools
 import collections
 
@@ -25,9 +27,10 @@ class Scorer(object):
             [x.get('tokens_ground', 0) for x in self._arena_data.values()],
             [x.get('tokens_platform', 0) for x in self._arena_data.values()],
         ))
-        if num_tokens > NUM_TOKENS:
+
+        if num_tokens != NUM_TOKENS:
             raise InvalidScoresheetException(
-                "Too many tokens: {} > {}".format(num_tokens, NUM_TOKENS),
+                "Wrong number of tokens: {} ≠ {}".format(num_tokens, NUM_TOKENS),
             )
 
     def calculate_scores(self):
