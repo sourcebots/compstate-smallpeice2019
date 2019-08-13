@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 
-import itertools
 import collections
 
 
@@ -28,12 +27,12 @@ class Scorer(object):
             info.setdefault('tokens_platform', 0)
 
     def validate(self, extra):
-        token_counts = tuple(itertools.chain(
-            [x['tokens_held'] for x in self._teams_data.values()],
-            [extra.get('tokens_ground', 0)],
-            [x['tokens_ground'] for x in self._arena_data.values()],
-            [x['tokens_platform'] for x in self._arena_data.values()],
-        ))
+        token_counts = (
+            [x['tokens_held'] for x in self._teams_data.values()] +
+            [extra.get('tokens_ground', 0)] +
+            [x['tokens_ground'] for x in self._arena_data.values()] +
+            [x['tokens_platform'] for x in self._arena_data.values()]
+        )
 
         negative_counts = [x for x in token_counts if x < 0]
         if negative_counts:
