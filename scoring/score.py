@@ -12,7 +12,7 @@ POINTS_HELD = 1
 POINTS_GROUND = 2
 POINTS_PLATFORM = 5
 
-NUM_TOKENS = 16
+NUM_TOKENS_IN_ARENA = 16
 
 
 class Scorer(object):
@@ -37,9 +37,12 @@ class Scorer(object):
             )
 
         num_tokens = sum(token_counts)
-        if num_tokens != NUM_TOKENS:
+        if num_tokens != NUM_TOKENS_IN_ARENA:
             raise InvalidScoresheetException(
-                "Wrong number of tokens: {} ≠ {}".format(num_tokens, NUM_TOKENS),
+                "Wrong number of tokens: {} ≠ {}".format(
+                    num_tokens,
+                    NUM_TOKENS_IN_ARENA,
+                ),
             )
 
     def calculate_scores(self):
