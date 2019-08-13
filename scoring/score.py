@@ -20,12 +20,19 @@ class Scorer(object):
         self._teams_data = teams_data
         self._arena_data = arena_data
 
+        for info in self._teams_data.values():
+            info.setdefault('tokens_held', 0)
+
+        for info in self._arena_data.values():
+            info.setdefault('tokens_ground', 0)
+            info.setdefault('tokens_platform', 0)
+
     def validate(self, extra):
         token_counts = tuple(itertools.chain(
-            [x.get('tokens_held', 0) for x in self._teams_data.values()],
+            [x['tokens_held'] for x in self._teams_data.values()],
             [extra.get('tokens_ground', 0)],
-            [x.get('tokens_ground', 0) for x in self._arena_data.values()],
-            [x.get('tokens_platform', 0) for x in self._arena_data.values()],
+            [x['tokens_ground'] for x in self._arena_data.values()],
+            [x['tokens_platform'] for x in self._arena_data.values()],
         ))
 
         negative_counts = [x for x in token_counts if x < 0]
@@ -47,13 +54,13 @@ class Scorer(object):
 
     def calculate_scores(self):
         scores_by_zone = {
-            zone: info.get('tokens_ground', 0) * POINTS_GROUND +
-                info.get('tokens_platform', 0) * POINTS_PLATFORM
+            zone: info['tokens_ground'] * POINTS_GROUND +
+                info['tokens_platform'] * POINTS_PLATFORM
             for zone, info in self._arena_data.items()
         }
 
         scores_by_tla = {
-            tla: info.get('tokens_held', 0) * POINTS_HELD
+            tla: info['tokens_held'] * POINTS_HELD
             for tla, info in self._teams_data.items()
         }
 
