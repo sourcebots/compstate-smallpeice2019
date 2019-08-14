@@ -11,3 +11,5 @@ matches:
     main: [SUP, T11, T05, null]
   5:
     main: [T07, T13, SUP, T01]
+  6:
+    main: [T01, T02, T03, T04]
