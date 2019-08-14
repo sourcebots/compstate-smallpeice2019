@@ -47,3 +47,6 @@ teams:
   T16:
     name: Team 16
     rookie: true
+  SUP:
+    name: Supervisors
+    rookie: true
