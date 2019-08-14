@@ -42,6 +42,14 @@ class Scorer(object):
                 ),
             )
 
+        fractional_counts = [x for x in token_counts if x % 1 != 0]
+        if fractional_counts:
+            raise InvalidScoresheetException(
+                "Fractional token counts are not valid (got {})".format(
+                    " and ".join(str(x) for x in fractional_counts),
+                ),
+            )
+
         num_tokens = sum(token_counts)
         if num_tokens != NUM_TOKENS_IN_ARENA:
             raise InvalidScoresheetException(

@@ -142,6 +142,51 @@ class ScorerTests(unittest.TestCase):
         with self.assertRaises(InvalidScoresheetException):
             scorer.validate({'tokens_ground': -1})
 
+    # Fractional tokens
+
+    def test_fractional_tokens_held(self):
+        # There are a total of 16 tokens
+
+        self.teams_data['ABC']['tokens_held'] = -0.5
+        self.teams_data['DEF']['tokens_held'] = 0.5 # make the total correct
+
+        scorer = self.construct_scorer()
+
+        with self.assertRaises(InvalidScoresheetException):
+            scorer.validate(self.extra_data)
+
+    def test_fractional_tokens_ground(self):
+        # There are a total of 16 tokens
+
+        self.arena_data[0]['tokens_ground'] = -0.5
+        self.arena_data[0]['tokens_ground'] = 0.5 # make the total correct
+
+        scorer = self.construct_scorer()
+
+        with self.assertRaises(InvalidScoresheetException):
+            scorer.validate(self.extra_data)
+
+    def test_fractional_tokens_platform(self):
+        # There are a total of 16 tokens
+
+        self.arena_data[1]['tokens_platform'] = -0.5
+        self.arena_data[1]['tokens_platform'] = 0.5 # make the total correct
+
+        scorer = self.construct_scorer()
+
+        with self.assertRaises(InvalidScoresheetException):
+            scorer.validate(self.extra_data)
+
+    def test_fractional_tokens_elsewhere(self):
+        # There are a total of 16 tokens
+
+        self.arena_data[1]['tokens_platform'] = 16.5 # make the total correct
+
+        scorer = self.construct_scorer()
+
+        with self.assertRaises(InvalidScoresheetException):
+            scorer.validate({'tokens_ground': -0.5})
+
     # Scoring logic
 
     def test_no_tokens_moved(self):
