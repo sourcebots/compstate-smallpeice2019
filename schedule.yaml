@@ -7,11 +7,11 @@ match_slot_lengths:
 # Various staging related times, in seconds before the actual match start
 staging:
   # The earliest teams can present themselves for a match
-  opens: 300
+  opens: 210
   # The time by which teams _must_ be in staging
-  closes: 120
+  closes: 100
   # How long staging is open for; equal to `opens - closes`
-  duration: 180
+  duration: 110
   # How long before the start of the match to signal to shepherds they
   # should start looking for teams
   signal_shepherds:
@@ -20,7 +20,7 @@ staging:
     Shepherd Level 3: 180
   # How long before the start of the match to signal to teams they should
   # go to staging
-  signal_teams: 180
+  signal_teams: 240
 #
 timezone: Europe/London
 #
