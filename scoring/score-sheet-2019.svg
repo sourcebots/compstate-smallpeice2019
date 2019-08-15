@@ -235,6 +235,30 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(0,3.2302534e-5)">
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 72.047241,192.36215 599.999999,0"
+       id="path4288"
+       inkscape:connector-curvature="0" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.75;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4296"
+       width="89.289322"
+       height="26.816235"
+       x="327.40256"
+       y="178.95403" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:20px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+       x="343.01404"
+       y="197.70395"
+       id="text4290"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4292"
+         x="343.01404"
+         y="197.70395"
+         style="font-size:20px;fill:#000000;fill-opacity:1;">Stage</tspan></text>
     <g
        transform="matrix(0.84245475,0,0,0.84245475,-7.0573852,51.489206)"
        id="g4055"
@@ -276,24 +300,24 @@
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:28px;line-height:125%;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
        x="571.11694"
-       y="162.46555"
+       y="150.46555"
        id="text3412-5-0"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          x="571.11694"
-         y="162.46555"
+         y="150.46555"
          id="tspan3497-4-0"
          style="font-size:26.25px">Match Number: _____</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:28px;line-height:125%;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
        x="42.804199"
-       y="161.61411"
+       y="149.61411"
        id="text3412-5-0-0-7"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          x="42.804199"
-         y="161.61411"
+         y="149.61411"
          id="tspan3497-4-0-6-3"
          style="font-size:26.25px">Scorer<tspan
    style="font-size:20px"
@@ -302,12 +326,12 @@
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#4d4d4d;fill-opacity:1;stroke:none"
        x="173.0946"
-       y="211.9101"
+       y="231.9101"
        id="text11423"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          x="173.0946"
-         y="211.9101"
+         y="231.9101"
          id="tspan3084"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans'"><tspan
    id="tspan3952"
@@ -315,11 +339,11 @@
     <text
        sodipodi:linespacing="125%"
        id="text11443"
-       y="211.71356"
+       y="231.71356"
        x="562.97742"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#4d4d4d;fill-opacity:1;stroke:none"
        xml:space="preserve"><tspan
-         y="211.71356"
+         y="231.71356"
          x="562.97742"
          sodipodi:role="line"
          id="tspan3086"
@@ -358,21 +382,21 @@
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.5px;line-height:125%;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none"
        x="303.50381"
-       y="235.69769"
+       y="255.69769"
        id="text3416"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3418"
          x="303.50381"
-         y="235.69769">Present: ▢</tspan><tspan
+         y="255.69769">Present: ▢</tspan><tspan
          sodipodi:role="line"
          x="303.50381"
-         y="257.8468"
+         y="277.8468"
          id="tspan3420">Disqualified: ▢</tspan><tspan
          id="tspan5510"
          sodipodi:role="line"
          x="303.50381"
-         y="279.99588" /></text>
+         y="299.99588" /></text>
     <use
        x="0"
        y="0"
@@ -385,16 +409,16 @@
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:20px;line-height:125%;font-family:'Open Sans';-inkscape-font-specification:'Open Sans';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
        x="103.7735"
-       y="235.7139"
+       y="255.7139"
        id="text3412-5"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          x="103.7735"
-         y="235.7139"
+         y="255.7139"
          id="tspan3083">Team No.: _______</tspan><tspan
          sodipodi:role="line"
          x="103.7735"
-         y="257.03482"
+         y="277.03482"
          id="tspan3089"
          style="font-size:16.25px">(from robot)</tspan></text>
     <use
@@ -410,7 +434,7 @@
        y="0"
        xlink:href="#text3416"
        id="use3574"
-       transform="translate(-1e-6,680.64824)"
+       transform="translate(-1e-6,660.64824)"
        width="744.09448"
        height="1052.3622" />
     <use
@@ -418,7 +442,7 @@
        y="0"
        xlink:href="#use3566"
        id="use3580"
-       transform="translate(-1e-6,680.64824)"
+       transform="translate(-1e-6,660.64824)"
        width="744.09448"
        height="1052.3622" />
     <use
@@ -426,7 +450,7 @@
        y="0"
        xlink:href="#text3412-5"
        id="use3576"
-       transform="translate(-1e-6,680.64823)"
+       transform="translate(-1e-6,660.64823)"
        width="744.09448"
        height="1052.3622" />
     <use
@@ -434,18 +458,18 @@
        y="0"
        xlink:href="#use3570"
        id="use3582"
-       transform="translate(-1e-6,680.64823)"
+       transform="translate(-1e-6,660.64823)"
        width="744.09448"
        height="1052.3622" />
     <g
-       transform="translate(10.537362,22.589009)"
+       transform="translate(10.537362,42.589009)"
        id="g5427">
       <use
          x="0"
          y="0"
          xlink:href="#text11423"
          id="use5419"
-         transform="translate(59.882323,534.90173)"
+         transform="translate(59.882323,514.90173)"
          width="100%"
          height="100%" />
       <use
@@ -453,7 +477,7 @@
          y="0"
          xlink:href="#text11443"
          id="use5421"
-         transform="translate(-330.00049,160)"
+         transform="translate(-330.00049,140)"
          width="100%"
          height="100%" />
       <use
@@ -475,7 +499,7 @@
     </g>
     <g
        id="g4405"
-       transform="matrix(1.0559012,0,0,1.0559012,-100.54234,-51.225308)">
+       transform="matrix(1.0559012,0,0,1.0559012,-100.54234,-31.225308)">
       <path
          sodipodi:nodetypes="ccccc"
          inkscape:connector-curvature="0"
@@ -666,7 +690,7 @@
        transform="matrix(1.1367073,0,0,1.1367073,-33.55031,4.9766943)" />
     <g
        id="g5372"
-       transform="translate(13.130208,14.742475)">
+       transform="translate(13.130208,34.742475)">
       <g
          id="use4476-3"
          transform="matrix(1.2365479,0,0,1.2365479,76.549382,-78.34138)"
@@ -722,7 +746,7 @@
     </g>
     <g
        id="g5456"
-       transform="translate(25.118783,1.691123)">
+       transform="translate(25.118783,21.691123)">
       <g
          style="fill:#000000"
          transform="matrix(1.2365479,0,0,1.2365479,4.57881,-139.44188)"
@@ -781,7 +805,7 @@
        transform="translate(22.895637,-92)">
       <g
          style="fill:#000000"
-         transform="matrix(1.2365479,0,0,1.2365479,-134.41614,-178.41244)"
+         transform="matrix(1.2365479,0,0,1.2365479,-134.41614,-158.41244)"
          id="use5383-1">
         <text
            sodipodi:linespacing="125%"
@@ -810,7 +834,7 @@
       <use
          height="100%"
          width="100%"
-         transform="translate(0,570.31371)"
+         transform="translate(0,550.31371)"
          id="use5385-4"
          xlink:href="#use5383-1"
          y="0"
@@ -818,7 +842,7 @@
       <use
          height="100%"
          width="100%"
-         transform="translate(417.70563,-570.31371)"
+         transform="translate(417.70563,-550.31371)"
          id="use5387-5"
          xlink:href="#use5385-4"
          y="0"
@@ -826,7 +850,7 @@
       <use
          height="100%"
          width="100%"
-         transform="translate(417.70563,570.31371)"
+         transform="translate(417.70563,550.31371)"
          id="use5385-9-0"
          xlink:href="#use5383-1"
          y="0"
@@ -837,7 +861,7 @@
        id="rect4281"
        width="21.635885"
        height="128.98424"
-       x="301.75552"
+       x="321.75552"
        y="-283.04373"
        transform="matrix(0,1,-1,0,0,0)" />
     <rect
@@ -845,7 +869,7 @@
        id="rect4281-3"
        width="21.635885"
        height="128.98424"
-       x="301.75552"
+       x="321.75552"
        y="-701.65094"
        transform="matrix(0,1,-1,0,0,0)" />
     <rect
@@ -866,11 +890,11 @@
        transform="matrix(0,1,-1,0,0,0)" />
     <g
        id="g4318"
-       transform="translate(0.20946128,0.80195075)">
+       transform="translate(0.20946128,20.801951)">
       <use
          height="100%"
          width="100%"
-         transform="matrix(0,-1,1,0,-122.85725,870.77549)"
+         transform="matrix(0,-1,1,0,-142.85725,870.77549)"
          id="use4310"
          xlink:href="#rect4281"
          y="0"
@@ -878,7 +902,7 @@
       <use
          height="100%"
          width="100%"
-         transform="matrix(0,-1,1,0,-122.85725,1136.6476)"
+         transform="matrix(0,-1,1,0,-142.85725,1136.6476)"
          id="use4312"
          xlink:href="#rect4281-3"
          y="0"
