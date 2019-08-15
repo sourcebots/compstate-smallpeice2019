@@ -15,9 +15,7 @@ staging:
   # How long before the start of the match to signal to shepherds they
   # should start looking for teams
   signal_shepherds:
-    # TODO: configure these times to allow for different distances from the arena?
     Shepherd Level 2 Bar: 180
-    Shepherd Level 3: 180
   # How long before the start of the match to signal to teams they should
   # go to staging
   signal_teams: 240
