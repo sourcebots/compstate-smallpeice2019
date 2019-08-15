@@ -16,7 +16,7 @@ match_number: 0
 teams:
   SUP:
     disqualified: false
-    present: false
+    present: true
     tokens_held: 0
     zone: 1
   T03:
