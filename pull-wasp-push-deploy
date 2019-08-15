@@ -1,0 +1,5 @@
+#!/bin/bash -e
+git pull wasp master
+git push
+srcomp deploy .
+ssh wasp 'cd compstate && git pull --ff-only'
