@@ -29,7 +29,6 @@ class Scorer(object):
     def validate(self, extra):
         token_counts = (
             [x['tokens_held'] for x in self._teams_data.values()] +
-            [extra.get('tokens_ground', 0)] +
             [x['tokens_ground'] for x in self._arena_data.values()] +
             [x['tokens_platform'] for x in self._arena_data.values()]
         )
@@ -51,9 +50,9 @@ class Scorer(object):
             )
 
         num_tokens = sum(token_counts)
-        if num_tokens != NUM_TOKENS_IN_ARENA:
+        if num_tokens > NUM_TOKENS_IN_ARENA:
             raise InvalidScoresheetException(
-                "Wrong number of tokens: {} ≠ {}".format(
+                "Too many tokens: {} > {}".format(
                     num_tokens,
                     NUM_TOKENS_IN_ARENA,
                 ),

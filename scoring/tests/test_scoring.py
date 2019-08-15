@@ -35,7 +35,6 @@ class ScorerTests(unittest.TestCase):
               'tokens_ground': 0,
             } for x in range(4)
         }
-        self.extra_data = {'tokens_ground': 16}
 
     # Wrong number of tokens
 
@@ -43,39 +42,34 @@ class ScorerTests(unittest.TestCase):
         # There are a total of 16 tokens
 
         self.teams_data['ABC']['tokens_held'] = 9
+        self.teams_data['DEF']['tokens_held'] = 10
 
         scorer = self.construct_scorer()
 
         with self.assertRaises(InvalidScoresheetException):
-            scorer.validate(self.extra_data)
+            scorer.validate(None)
 
     def test_too_many_tokens_ground(self):
         # There are a total of 16 tokens
 
         self.arena_data[0]['tokens_ground'] = 9
+        self.arena_data[1]['tokens_ground'] = 10
 
         scorer = self.construct_scorer()
 
         with self.assertRaises(InvalidScoresheetException):
-            scorer.validate(self.extra_data)
+            scorer.validate(None)
 
     def test_too_many_tokens_platform(self):
         # There are a total of 16 tokens
 
         self.arena_data[1]['tokens_platform'] = 9
+        self.arena_data[2]['tokens_platform'] = 10
 
         scorer = self.construct_scorer()
 
         with self.assertRaises(InvalidScoresheetException):
-            scorer.validate(self.extra_data)
-
-    def test_too_many_tokens_elsewhere(self):
-        # There are a total of 16 tokens
-
-        scorer = self.construct_scorer()
-
-        with self.assertRaises(InvalidScoresheetException):
-            scorer.validate({'tokens_ground': 20})
+            scorer.validate(None)
 
     def test_too_many_tokens_mixed(self):
         # There are a total of 16 tokens
@@ -87,15 +81,14 @@ class ScorerTests(unittest.TestCase):
         scorer = self.construct_scorer()
 
         with self.assertRaises(InvalidScoresheetException):
-            scorer.validate({'tokens_ground': 2})
+            scorer.validate(None)
 
     def test_too_few_tokens(self):
-        # There are a total of 16 tokens
+        # There are a total of 16 tokens, but we don't require that all are
+        # accounted for.
 
         scorer = self.construct_scorer()
-
-        with self.assertRaises(InvalidScoresheetException):
-            scorer.validate({'tokens_ground': 2})
+        scorer.validate(None)
 
     # Negative tokens
 
@@ -103,44 +96,31 @@ class ScorerTests(unittest.TestCase):
         # There are a total of 16 tokens
 
         self.teams_data['ABC']['tokens_held'] = -9
-        self.teams_data['DEF']['tokens_held'] = 9 # make the total correct
 
         scorer = self.construct_scorer()
 
         with self.assertRaises(InvalidScoresheetException):
-            scorer.validate(self.extra_data)
+            scorer.validate(None)
 
     def test_negative_tokens_ground(self):
         # There are a total of 16 tokens
 
         self.arena_data[0]['tokens_ground'] = -9
-        self.arena_data[0]['tokens_ground'] = 9 # make the total correct
 
         scorer = self.construct_scorer()
 
         with self.assertRaises(InvalidScoresheetException):
-            scorer.validate(self.extra_data)
+            scorer.validate(None)
 
     def test_negative_tokens_platform(self):
         # There are a total of 16 tokens
 
         self.arena_data[1]['tokens_platform'] = -9
-        self.arena_data[1]['tokens_platform'] = 9 # make the total correct
 
         scorer = self.construct_scorer()
 
         with self.assertRaises(InvalidScoresheetException):
-            scorer.validate(self.extra_data)
-
-    def test_negative_tokens_elsewhere(self):
-        # There are a total of 16 tokens
-
-        self.arena_data[1]['tokens_platform'] = 17 # make the total correct
-
-        scorer = self.construct_scorer()
-
-        with self.assertRaises(InvalidScoresheetException):
-            scorer.validate({'tokens_ground': -1})
+            scorer.validate(None)
 
     # Fractional tokens
 
@@ -148,44 +128,31 @@ class ScorerTests(unittest.TestCase):
         # There are a total of 16 tokens
 
         self.teams_data['ABC']['tokens_held'] = -0.5
-        self.teams_data['DEF']['tokens_held'] = 0.5 # make the total correct
 
         scorer = self.construct_scorer()
 
         with self.assertRaises(InvalidScoresheetException):
-            scorer.validate(self.extra_data)
+            scorer.validate(None)
 
     def test_fractional_tokens_ground(self):
         # There are a total of 16 tokens
 
         self.arena_data[0]['tokens_ground'] = -0.5
-        self.arena_data[0]['tokens_ground'] = 0.5 # make the total correct
 
         scorer = self.construct_scorer()
 
         with self.assertRaises(InvalidScoresheetException):
-            scorer.validate(self.extra_data)
+            scorer.validate(None)
 
     def test_fractional_tokens_platform(self):
         # There are a total of 16 tokens
 
         self.arena_data[1]['tokens_platform'] = -0.5
-        self.arena_data[1]['tokens_platform'] = 0.5 # make the total correct
 
         scorer = self.construct_scorer()
 
         with self.assertRaises(InvalidScoresheetException):
-            scorer.validate(self.extra_data)
-
-    def test_fractional_tokens_elsewhere(self):
-        # There are a total of 16 tokens
-
-        self.arena_data[1]['tokens_platform'] = 16.5 # make the total correct
-
-        scorer = self.construct_scorer()
-
-        with self.assertRaises(InvalidScoresheetException):
-            scorer.validate({'tokens_ground': -0.5})
+            scorer.validate(None)
 
     # Scoring logic
 
