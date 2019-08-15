@@ -7,9 +7,6 @@ teams:
       - T03
       - T04
       - T05
-  - name: level-3
-    display_name: Level 3
-    teams:
       - T06
       - T07
       - T08

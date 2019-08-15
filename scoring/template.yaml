@@ -13,8 +13,6 @@ arena_zones:
   3:
     tokens_platform: 0
     tokens_ground: 0
-other:
-  tokens_ground: 16
 teams:
   TLA1:
     zone: 0
