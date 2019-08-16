@@ -3,7 +3,7 @@ teams:
     name: The Unknowns
     rookie: true
   T02:
-    name: Team Two
+    name: 00110110  # ASCII 'F'
     rookie: true
   T03:
     name: '"); DROP TABLE Scoreboard; --'
