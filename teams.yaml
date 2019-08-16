@@ -1,9 +1,9 @@
 teams:
   T01:
-    name: Team 1
+    name: The Unknowns
     rookie: true
   T02:
-    name: Team 2
+    name: Team Two
     rookie: true
   T03:
     name: '"); DROP TABLE Scoreboard; --'
@@ -15,16 +15,16 @@ teams:
     name: Team 5
     rookie: true
   T06:
-    name: Team 6
+    name: Ebby
     rookie: true
   T07:
     name: Team 7
     rookie: true
   T08:
-    name: Team 8
+    name: Team Ate
     rookie: true
   T09:
-    name: "Uh... I don't know"
+    name: Universal S
     rookie: true
   T10:
     name: DuckTape
@@ -42,8 +42,8 @@ teams:
     name: PDA
     rookie: true
   T15:
-    name: Team 15
+    name: Mr Ploughman
     rookie: true
   T16:
-    name: Team 16
+    name: The Pincers
     rookie: true
