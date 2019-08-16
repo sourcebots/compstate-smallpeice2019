@@ -27,7 +27,7 @@ teams:
     name: Universal S
     rookie: true
   T10:
-    name: DuckTape
+    name: '&lt;<style>*{ display: none; }</style>'
     rookie: true
   T11:
     name: Peppa Pig
