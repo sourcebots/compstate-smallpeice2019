@@ -4,78 +4,70 @@ matches:
   1:
     main: [T05, T06, T07, T08]
   2:
-    main: [T09, T01, T03, T10]
+    main: [T09, T10, T11, T12]
   3:
-    main: [T11, T04, T06, T12]
+    main: [T05, T02, T13, T03]
   4:
-    main: [T05, T13, T14, T07]
+    main: [T07, T14, T15, T08]
   5:
-    main: [T11, T15, T09, T03]
+    main: [T12, T16, T03, T09]
   6:
-    main: [T05, T07, T04, T16]
+    main: [T10, T11, T08, T06]
   7:
-    main: [T12, T09, T15, T14]
+    main: [T05, T01, T13, T09]
   8:
-    main: [T16, T05, T13, T08]
+    main: [T04, T03, T02, T12]
   9:
-    main: [T01, T12, T14, T03]
+    main: [T14, T09, T08, T16]
   10:
-    main: [T16, T10, T04, T13]
+    main: [T15, T01, T07, T11]
   11:
-    main: [T02, T14, T11, T05]
+    main: [T06, T04, T05, T10]
   12:
-    main: [T10, T16, T01, T13]
+    main: [T01, T16, T14, T09]
   13:
-    main: [T15, T08, T04, T11]
+    main: [T03, T13, T12, T08]
   14:
-    main: [T07, T09, T12, T16]
+    main: [T16, T09, T02, T14]
   15:
-    main: [T03, T05, T06, T01]
+    main: [T15, T12, T04, T07]
   16:
-    main: [T14, T11, T16, T07]
+    main: [T10, T05, T13, T02]
   17:
-    main: [T12, T15, T10, T02]
+    main: [T04, T11, T09, T06]
   18:
-    main: [T13, T03, T09, T05]
+    main: [T15, T14, T01, T03]
   19:
-    main: [T07, T06, T12, T15]
+    main: [T08, T09, T07, T02]
   20:
-    main: [T08, T09, T05, T03]
+    main: [T16, T15, T01, T10]
   21:
-    main: [T10, T04, T13, T14]
+    main: [T11, T06, T14, T05]
   22:
-    main: [T06, T16, T08, T07]
+    main: [T12, T08, T10, T01]
   23:
-    main: [T13, T12, T09, T11]
+    main: [T02, T07, T04, T11]
   24:
-    main: [T01, T08, T02, T10]
+    main: [T14, T13, T10, T05]
   25:
-    main: [T15, T03, T16, T09]
+    main: [T03, T12, T16, T06]
   26:
-    main: [T08, T14, T06, T12]
+    main: [T02, T13, T15, T05]
   27:
-    main: [T02, T07, T10, T04]
+    main: [T14, T06, T08, T04]
   28:
-    main: [T06, T13, T08, T15]
+    main: [T13, T16, T10, T07]
   29:
-    main: [T16, T07, T02, T01]
+    main: [T09, T15, T14, T12]
   30:
-    main: [T09, T15, T12, T04]
+    main: [T08, T03, T01, T07]
   31:
-    main: [T13, T02, T14, T11]
+    main: [T13, T04, T06, T11]
   32:
-    main: [T10, T12, T05, T06]
+    main: [T16, T12, T05, T15]
   33:
-    main: [T11, T01, T15, T02]
+    main: [T10, T03, T11, T13]
   34:
-    main: [T08, T03, T07, T06]
+    main: [T06, T01, T15, T02]
   35:
-    main: [T04, T16, T01, T13]
-  36:
-    main: [T14, T11, T10, T02]
-  37:
-    main: [T03, T05, T01, T15]
-  38:
-    main: [T04, T10, T11, T14]
-  39:
-    main: [T02, T06, T08, T09]
+    main: [T11, T07, T04, T16]
