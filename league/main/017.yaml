@@ -1,0 +1,36 @@
+arena_id: main
+arena_zones:
+  0:
+    tokens_ground: 0
+    tokens_platform: 0
+  1:
+    tokens_ground: 0
+    tokens_platform: 0
+  2:
+    tokens_ground: 0
+    tokens_platform: 0
+  3:
+    tokens_ground: 0
+    tokens_platform: 0
+match_number: 17
+teams:
+  T04:
+    disqualified: false
+    present: true
+    tokens_held: 0
+    zone: 0
+  T06:
+    disqualified: false
+    present: true
+    tokens_held: 0
+    zone: 3
+  T09:
+    disqualified: false
+    present: true
+    tokens_held: 0
+    zone: 2
+  T11:
+    disqualified: false
+    present: true
+    tokens_held: 0
+    zone: 1
