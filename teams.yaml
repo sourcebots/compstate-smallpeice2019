@@ -6,10 +6,10 @@ teams:
     name: Team 2
     rookie: true
   T03:
-    name: Team 3
+    name: '"); DROP TABLE Scoreboard; --'
     rookie: true
   T04:
-    name: Team 4
+    name: BIG W
     rookie: true
   T05:
     name: Team 5
